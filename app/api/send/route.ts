@@ -7,9 +7,12 @@ export async function POST() {
   try {
     const { data, error } = await resend.emails.send({
       from: "ViewUs <team@viewus.in>",
-      to: ["uditkapoor060@gmail.com"],
+      to: ["ankursharma1493@gmail.com", "uditkapoor060@gmail.com"],
       subject: "Hello world",
-      react: EmailTemplate({ firstName: "view-us" }),
+      react: EmailTemplate({
+        firstName: "view-us",
+        templateType: "review-threshold",
+      }),
     });
 
     if (error) {
