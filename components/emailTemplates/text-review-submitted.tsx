@@ -1,4 +1,5 @@
 import * as React from "react";
+import { ReviewConfirmationEmail } from "./ReviewConfirmation";
 
 interface EmailTemplateProps {
   firstName: string;
@@ -8,9 +9,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   firstName,
 }) => (
   <div>
-    <h1>
-      Now its official!! we are fucking building this platform {firstName}
-    </h1>
+    <ReviewConfirmationEmail name={firstName} />
   </div>
 );
 //1 create a mail to send a confirmation to user that review is stored, create this for normal
