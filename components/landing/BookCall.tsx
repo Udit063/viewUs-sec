@@ -10,7 +10,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
-import Cal from "@calcom/embed-react";
 
 export const BookCall = () => {
   return (
@@ -23,35 +22,35 @@ export const BookCall = () => {
       </div>
       <div className="text-white flex flex-col lg:flex-row justify-around">
         <Accordion type="single" collapsible className="w-full lg:w-2/3">
-          <AccordionItem value="item-1">
+          <AccordionItem value="item-1" className="bg-[#611bbc]">
             <AccordionTrigger>Who can use ViewUs?</AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-gray-300">
               Any business wanting to showcase customer testimonials.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-2">
+          <AccordionItem value="item-2" className="bg-[#611bbc]">
             <AccordionTrigger>How does it work?</AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-gray-300">
               You share a link with customers, they either submit text review or
               upload video, and you embed them on your site.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-3">
+          <AccordionItem value="item-3" className="bg-[#611bbc]">
             <AccordionTrigger>How do I embed testimonials?</AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-gray-300">
               Copy the embed code from your dashboard and paste it into your
               website.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-4">
+          <AccordionItem value="item-4" className="bg-[#611bbc]">
             <AccordionTrigger>Can I customize the widget?</AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-gray-300">
               Yes, you can match the widget to your brand’s look.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-5">
+          <AccordionItem value="item-5" className="bg-[#611bbc]">
             <AccordionTrigger>Is it easy to use?</AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-gray-300">
               Absolutely! No coding skills are required.
             </AccordionContent>
           </AccordionItem>
@@ -113,19 +112,6 @@ export const BookCall = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
-      </div>
-      <div id="book-call" className="mt-16 hidden lg:block">
-        <div className="py-8 flex flex-col gap-6">
-          <p className="text-gray-400 font-thin font-mono text-md">
-            Time to take Action
-          </p>
-          <h1 className="text-white text-4xl md:text-5xl">
-            Book your spot, Let us help you
-          </h1>
-        </div>
-        <div className="max-h-[600px] overflow-y-auto scrollbar-hidden">
-          <Cal calLink="ankur-sharma/15min"></Cal>
         </div>
       </div>
     </div>

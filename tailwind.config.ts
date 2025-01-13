@@ -24,6 +24,7 @@ const config: Config = {
         secondBackground: "#E6E6E6",
         blueBackground: "#E9F8FF",
         blueButton: "#71D4FF",
+        text: "#8A2FFF",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -82,6 +83,8 @@ const config: Config = {
       boxShadow: {
         custom: "0 4px 15px rgba(0, 0, 0, 0.1)",
         top: "0 -10px 24px rgba(0, 0, 0, 0.2)",
+        landing:
+          "-5px 12px 20px rgb(170, 169, 169), 5px 12px 20px rgb(170, 169, 169)",
       },
       keyframes: {
         "accordion-down": {
