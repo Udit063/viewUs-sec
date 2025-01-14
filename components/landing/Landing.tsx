@@ -9,15 +9,36 @@ export const Landing = () => {
   return (
     <div className="flex flex-col items-center relative top-0 w-full transform rounded-2xl">
       <Navbar active="none" />
-      <div className="w-[80%] flex flex-col justify-center items-center space-y-28 py-20">
-        <div className="flex flex-col gap-2 justify-center w-fit">
+      <div className="w-[80%] flex flex-col justify-center items-center space-y-28 pt-12 pb-20">
+        <div className="flex flex-col  justify-center w-fit">
           <h1 className="text-7xl text-black font-medium text-center">
             Everything You Need
           </h1>
-          <div className="bg-[#E7D6FF] p-6 rounded-2xl border border-white border-2 rotate-2 ">
-            <h2 className="text-7xl text-text font-medium text-center">
-              To Manage Testimonials
-            </h2>
+          <div
+            className="bg-white border border-[#D7BEEA] border-2 p-2 rotate-2 rounded-[30px] "
+            style={{
+              boxShadow: "0 50px 50px 2px  rgb(201, 161, 254)",
+            }}
+          >
+            <div className="relative bg-[#E7D6FF] p-6 rounded-[20px] border border-[#D7BEEA] border-2 overflow-hidden">
+              <div
+                className="absolute inset-0 z-0"
+                style={{
+                  backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 10px,
+                  rgba(215, 190, 234, 0.3) 10px,
+                  rgba(215, 190, 234, 0.3) 11px)`,
+                }}
+              />
+              <h2
+                className="relative text-7xl z-10 font-medium text-center p-1 bg-clip-text text-transparent"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(135deg, #6025FF 0%, #8A2FFF 100%)",
+                }}
+              >
+                To Manage Testimonials
+              </h2>
+            </div>
           </div>
         </div>
         <div className="w-full flex flex-col gap-10">

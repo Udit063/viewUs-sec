@@ -25,6 +25,7 @@ const config: Config = {
         blueBackground: "#E9F8FF",
         blueButton: "#71D4FF",
         text: "#8A2FFF",
+        text2: "#702ad3",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
