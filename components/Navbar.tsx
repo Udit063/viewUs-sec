@@ -6,6 +6,7 @@ import logo from "@/public/assets/images/logo1.png";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { GetStartedButton } from "./landing/GetStartedButton";
 
 const Navbar = ({ active }: { active: string }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,33 +68,7 @@ const Navbar = ({ active }: { active: string }) => {
         </nav>
         <div>
           <Link href="/login">
-            <Button
-              className="group relative rounded-xl px-6 py-5 text-lg font-medium text-white shadow-lg shadow-purple-500/25 transition-all duration-200 hover:shadow-xl hover:shadow-purple-500/30 hover:translate-y-[-1px] overflow-hidden ring-1 ring-text ring-opacity-60"
-              style={{
-                background:
-                  "linear-gradient(130deg, #a855f7 30%,rgb(188, 130, 247) 60%,rgb(173, 94, 247) 80%,rgb(188, 130, 247) 95%);",
-              }}
-            >
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: `
-              linear-gradient(to bottom,
-                rgba(255, 255, 255, 0.5) 0%,
-                rgba(255, 255, 255, 0.15) 5%,
-                transparent 20%
-              ),
-              linear-gradient(to top,
-                rgba(0, 0, 0, 0.4) 0%,
-                rgba(0, 0, 0, 0.15) 4%,
-                transparent 20%
-              )
-            `,
-                  borderRadius: "12px",
-                }}
-              />
-              <span className="z-10 text-md font-semibold">Sign Up</span>
-            </Button>
+            <GetStartedButton content="Sign Up" />
           </Link>
         </div>
       </div>
